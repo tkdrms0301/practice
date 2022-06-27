@@ -1,0 +1,5 @@
+CREATE DATABASE delivery DEFAULT CHARACTER SET utf8;
+
+CREATE USER delivery_user IDENTIFIED BY 'user';
+
+GRANT ALL ON delivery.* TO delivery_user;
