@@ -1,0 +1,5 @@
+1. 액셀 파일이 xlsx 이고 한컴오피스 액셀파일에서 실행시 오류가 나는 것으로 보아 ms오피스 액셀에서 저장하는 것이 좋아 보임
+
+2. import시 패키지에 없는 경우 python이 설치된 경로에서 pip install '모듈이름' 입력하여 모듈 설치
+
+3. json dump시 한글이 깨지는 경우 ensure_ascii=False사용
