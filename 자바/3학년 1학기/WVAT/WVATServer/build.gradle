@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/" }
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
+}
+
+dependencies {
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation 'net.sf.jasperreports:jasperreports:6.19.0'
+    implementation 'net.sf.jasperreports:jasperreports-fonts:6.19.0'
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation 'com.github.hazendaz.jsoup:jsoup:1.15.1'
+    implementation 'jnetpcap:jnetpcap:1.4.r1425-1g'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.26'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.8.0'
+    implementation group: 'org.mybatis', name: 'mybatis', version: '3.5.7'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "mapper.GuideLine">
+
+    <resultMap id = "guideLine" type="Persistence.DTO.GuideLineDTO">
+        <result property = "guideLineNum" column="guideLineNum"/>
+        <result property = "vulnerabilityType" column="vulnerabilityType"/>
+        <result property = "path" column="path"/>
+        <result property = "date" column="date"/>
+    </resultMap>
+
+    <select id="guideLineSelectPrint" resultMap="guideLine">
+        SELECT path FROM guideline WHERE vulnerabilityType = #{vulnerabilityType} ;
+    </select>
+
+    <select id="guideLineAllPrint" resultMap="guideLine">
+        SELECT * FROM guideline;
+    </select>
+
+</mapper>

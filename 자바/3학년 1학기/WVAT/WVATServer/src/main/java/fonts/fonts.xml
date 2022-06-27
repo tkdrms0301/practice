@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fontFamilies>
+    <fontFamily name="맑은 고딕">
+        <normal>fonts/malgun.ttf</normal>
+        <bold>fonts/malgunbd.ttf</bold>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'맑은 고딕', 'Malgun Gothic', Arial, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'맑은 고딕', 'Malgun Gothic', Arial, sans-serif</export>
+        </exportFonts>
+    </fontFamily>
+
+    <fontFamily name="굴림">
+        <normal>fonts/gulim.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'굴림', Gulim, Arial, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'굴림', Gulim, Arial, sans-serif</export>
+        </exportFonts>
+    </fontFamily>
+
+</fontFamilies>

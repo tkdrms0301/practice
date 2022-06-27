@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sample1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="abde79de-8ad1-45e1-b491-359687783377">
+	<subDataset name="Empty Dataset1" uuid="eaa4d4a3-c166-4d14-bd67-9e4da16fb82b"/>
+	<parameter name="webMethodInput" class="java.lang.String"/>
+	<parameter name="webMethodOutput" class="java.lang.String"/>
+	<parameter name="cveInput" class="java.lang.String"/>
+	<parameter name="cveOutput" class="java.lang.String"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement key="" mode="Opaque" x="30" y="28" width="69" height="139" backcolor="#999999" uuid="43162e2d-319e-4d72-9b1a-f59c3dc245c8"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.25"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[메소드 
+설정 취약점]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="108" width="359" height="28" uuid="6034ff1e-46a5-4562-8662-8fa53afefc0b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{webMethodInput}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="136" width="359" height="31" uuid="c74fd974-e532-4b57-8d07-d2a4845fef2f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{webMethodOutput}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="28" width="50" height="60" backcolor="#D1D1D1" uuid="3fb0d7f3-5e4f-4793-ac3d-f5624fdcd1c7"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[판단기준]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="88" width="81" height="20" backcolor="#D1D1D1" uuid="f62f956d-3c06-405c-b425-b36eee5b0fc7"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[점검내용]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="108" width="50" height="59" backcolor="#D1D1D1" uuid="119d6bb0-83b2-43dc-9f70-810015a7b1a4"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[점검결과]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="28" width="31" height="30" backcolor="#D1D1D1" uuid="b8d3b648-e7db-49d0-940b-ed2da349392f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[양호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="58" width="31" height="30" backcolor="#D1D1D1" uuid="aab57a9e-9d4d-4e25-892d-f28b4509fd48"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[취약]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="58" width="359" height="30" uuid="2c86c89d-ae98-4eb1-b3c7-4c379eef2e76"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[불필요한 웹 메소드 설정이 비활성화 되어있는 경우]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="88" width="359" height="20" uuid="2fbcca86-f26a-47ae-ace8-6b9a81a74f3d"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[세션 인증이 되어있지 않은 상태에서의 PUT, DELETE 메소드 허용 여부 확인]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="108" width="31" height="28" backcolor="#D1D1D1" uuid="635cf67f-f089-43b3-af88-dc6c5b2a2f13"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[입력값]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="136" width="31" height="31" backcolor="#D1D1D1" uuid="d0a4a593-bb7c-47b2-864b-8b301967f288"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[결과값]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="28" width="359" height="30" uuid="46d0706b-d1b4-4b45-88f4-b5f703a75584"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true" pdfEncoding=""/>
+				</textElement>
+				<text><![CDATA[불필요한 웹 메소드 설정이 활성화 되어있는 경우]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" mode="Opaque" x="30" y="167" width="69" height="353" backcolor="#999999" uuid="9ac276ad-86a4-4daa-ba07-2b33df766242"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CVE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="210" width="359" height="28" uuid="1e83ea0a-2a70-4c63-a7d5-af730529d6e0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cveInput}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="238" width="359" height="282" uuid="7853d5dd-a3fc-4f14-a66c-b671e536f53b"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cveOutput}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="167" width="81" height="23" backcolor="#D1D1D1" uuid="38f051d0-3d03-45ec-b7c8-9f0d325faebd"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[판단기준]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="190" width="81" height="20" backcolor="#D1D1D1" uuid="b1a7dae1-6d36-4b27-af67-25aa0fa2f654"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[점검내용]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="99" y="210" width="50" height="310" backcolor="#D1D1D1" uuid="ef216d86-1fdb-4dd8-9a3c-5863f0c85e1c"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[점검결과]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="190" width="359" height="20" uuid="5d1fc37d-37e7-45af-82c0-aa252c5a99c2"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[현재 알려진 취약점에 대한 목록 제공]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="210" width="31" height="28" backcolor="#D1D1D1" uuid="679e4e7e-4faf-4707-b811-dfd5bbb2cbcd"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[입력값]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="149" y="238" width="31" height="282" backcolor="#D1D1D1" uuid="2cd79727-e976-4f83-be0c-e54c1e1a2e0c"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true"/>
+				</textElement>
+				<text><![CDATA[결과값]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="167" width="359" height="23" uuid="cabb20cc-19b2-421b-8c89-ea859a5e1188"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="나눔고딕" isBold="true" pdfEncoding=""/>
+				</textElement>
+				<text><![CDATA[정보 누출 취약점이 존재 하는 경우]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

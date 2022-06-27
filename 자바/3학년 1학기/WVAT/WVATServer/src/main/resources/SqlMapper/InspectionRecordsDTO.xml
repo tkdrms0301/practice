@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "mapper.InspectionRecords">
+
+    <resultMap id = "InspectionRecords" type="Persistence.DTO.InspectionRecordsDTO">
+        <result property = "domainNum" column="domainNum"/>
+        <result property = "domain" column="domain"/>
+        <result property = "date" column="date"/>
+        <result property = "osCommandInput" column="osCommandInput"/>
+        <result property = "sqlInjectionInput" column="sqlInjectionInput"/>
+        <result property = "cveInput" column="cveInput"/>
+        <result property = "directoryIndexingInput" column="directoryIndexingInput"/>
+        <result property = "informationLeakageInput" column="informationLeakageInput"/>
+        <result property = "xssInput" column="xssInput"/>
+        <result property = "pathTrackingInput" column="pathTrackingInput"/>
+        <result property = "adminExposeInput" column="adminExposeInput"/>
+        <result property = "locationDisclosureInput" column="locationDisclosureInput"/>
+        <result property = "plainTextInput" column="plainTextInput"/>
+        <result property = "webMethodInput" column="webMethodInput"/>
+        <result property = "osCommandOutput" column="osCommandOutput"/>
+        <result property = "sqlInjectionOutput" column="sqlInjectionOutput"/>
+        <result property = "cveOutput" column="cveOutput"/>
+        <result property = "directoryIndexingOutput" column="directoryIndexingOutput"/>
+        <result property = "informationLeakageOutput" column="informationLeakageOutput"/>
+        <result property = "xssOutput" column="xssOutput"/>
+        <result property = "pathTrackingOutput" column="pathTrackingOutput"/>
+        <result property = "adminExposeOutput" column="adminExposeOutput"/>
+        <result property = "locationDisclosureOutput" column="locationDisclosureOutput"/>
+        <result property = "plainTextOutput" column="plainTextOutput"/>
+        <result property = "webMethodOutput" column="webMethodOutput"/>
+    </resultMap>
+
+    <insert id="inspectionRecordCreate">
+        INSERT INTO inspectionrecords(domain, date) VALUES (#{domain}, #{date});
+    </insert>
+
+    <select id="domainSelectPrint" resultMap="InspectionRecords">
+        SELECT * FROM inspectionrecords WHERE domain = #{domain}
+    </select>
+
+    <select id="domainNumSelectPrint" resultMap="InspectionRecords">
+        SELECT * FROM inspectionrecords WHERE domainNum = #{domainNum}
+    </select>
+
+    <update id = "inspectionRecordsInit">
+        UPDATE inspectionrecords SET
+        date = #{date},
+        osCommandInput = NULL,
+        sqlInjectionInput = NULL,
+        cveInput = NULL,
+        directoryIndexingInput = NULL,
+        informationLeakageInput = NULL,
+        xssInput = NULL,
+        pathTrackingInput = NULL,
+        adminExposeInput = NULL,
+        locationDisclosureInput = NULL,
+        plainTextInput = NULL,
+        webMethodInput = NULL,
+
+        osCommandOutput = NULL,
+        sqlInjectionOutput = NULL,
+        cveOutput = NULL,
+        directoryIndexingOutput = NULL,
+        informationLeakageOutput = NULL,
+        xssOutput = NULL,
+        pathTrackingOutput = NULL,
+        adminExposeOutput = NULL,
+        locationDisclosureOutput = NULL,
+        plainTextOutput = NULL,
+        webMethodOutput = NULL
+        WHERE domain = #{domain}
+    </update>
+
+    <update id = "osCommandSet">
+        UPDATE inspectionrecords SET osCommandInput = #{osCommandInput}, osCommandOutput = #{osCommandOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "sqlInjectionSet">
+        UPDATE inspectionrecords SET sqlInjectionInput = #{sqlInjectionInput}, sqlInjectionOutput = #{sqlInjectionOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "cveSet">
+        UPDATE inspectionrecords SET cveInput = #{cveInput}, cveOutput = #{cveOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "directoryIndexingSet">
+        UPDATE inspectionrecords SET directoryIndexingInput = #{directoryIndexingInput}, directoryIndexingOutput = #{directoryIndexingOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "informationLeakageSet">
+        UPDATE inspectionrecords SET informationLeakageInput = #{informationLeakageInput}, informationLeakageOutput = #{informationLeakageOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "xssSet">
+        UPDATE inspectionrecords SET xssInput = #{xssInput}, xssOutput = #{xssOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "pathTrackingSet">
+        UPDATE inspectionrecords SET pathTrackingInput = #{pathTrackingInput}, pathTrackingOutput = #{pathTrackingOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "adminExposeSet">
+        UPDATE inspectionrecords SET adminExposeInput = #{adminExposeInput}, adminExposeOutput = #{adminExposeOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "locationDisclosureSet">
+        UPDATE inspectionrecords SET locationDisclosureInput = #{locationDisclosureInput}, locationDisclosureOutput = #{locationDisclosureOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "plainTextSet">
+        UPDATE inspectionrecords SET plainTextInput = #{plainTextInput}, plainTextOutput = #{plainTextOutput} WHERE domain = #{domain}
+    </update>
+
+    <update id = "webMethodSet">
+        UPDATE inspectionrecords SET webMethodInput = #{webMethodInput}, webMethodOutput = #{webMethodOutput} WHERE domain = #{domain}
+    </update>
+
+
+</mapper>

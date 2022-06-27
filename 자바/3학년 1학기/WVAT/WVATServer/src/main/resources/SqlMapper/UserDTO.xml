@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "mapper.User">
+
+    <resultMap id = "user" type="Persistence.DTO.UserDTO">
+        <result property = "userNum" column="userNum"/>
+        <result property = "userID" column="userID"/>
+        <result property = "userPW" column="userPW"/>
+        <result property = "email" column="email"/>
+    </resultMap>
+
+    <select id="userSelectPrint" resultMap="user">
+        SELECT * FROM user WHERE userID = #{userID} ;
+    </select>
+
+    <insert id="userCreate">
+        INSERT INTO user(userID, userPW, email) VALUES (#{userID}, #{userPW}, #{email});
+    </insert>
+
+
+</mapper>

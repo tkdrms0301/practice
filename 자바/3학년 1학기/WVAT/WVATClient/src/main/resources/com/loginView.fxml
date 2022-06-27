@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LoginController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="364.0" fitWidth="645.0" layoutX="42.0" layoutY="104.0" opacity="0.78" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="104.0">
+         <Image url="@/Security.jpg" />
+      </ImageView>
+      <Label layoutX="260.0" layoutY="44.0" text="WVAT">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_RIGHT" layoutX="261.0" layoutY="245.0" prefHeight="65.0" prefWidth="57.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="23.0" style="-fx-font-weight: bold;" text="ID">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="24.0" prefWidth="24.0" style="-fx-font-weight: bold;" text="PW">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="321.0" layoutY="245.0" prefHeight="65.0" prefWidth="162.0">
+         <children>
+            <TextField fx:id="txtID" prefHeight="24.0" prefWidth="162.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtPw" prefHeight="24.0" prefWidth="162.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="310.0" layoutY="314.0" prefHeight="71.0" prefWidth="80.0">
+         <children>
+            <Button fx:id="loginBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="로그인">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="signUpBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="회원가입" />
+         </children>
+      </VBox>
+      <Label contentDisplay="CENTER" graphicTextGap="1.0" layoutX="431.0" layoutY="448.0" prefHeight="52.0" prefWidth="267.0" text="Web Vulnerability Analysis Tool">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
