@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.Subject">
+    <resultMap id="result" type="persistence.dto.BoardDTO">
+        <result property="id" column="board_id"/>
+        <result property="title" column="title"/>
+        <result property="writer" column="writer"/>
+        <result property="content" column="content"/>
+        <result property="hit" column="hit"/>
+    </resultMap>
+    <select id="selectAll" resultMap="result">
+        SELECT * FROM BOARD
+    </select>
+    <insert id="insert" parameterType="persistence.dto.InsertDTO">
+        INSERT INTO BOARD(title, writer, contents, hit) VALUES(#{title}, #{writer}, #{content}, #{hit})
+    </insert>
+    <update id="update" parameterType="persistence.dto.UpdateDTO">
+        UPDATE BOARD
+        SET title = #{title}, writer = #{writer}, contents = #{content}, hit = #{hit}
+        <where>
+            board_id = #{id}
+        </where>
+    </update>
+    <delete id="delete" parameterType="Long">
+        DELETE FROM BOARD
+        <where>
+            board_id = #{id}
+        </where>
+    </delete>
+</mapper>

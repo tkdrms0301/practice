@@ -1,0 +1,44 @@
+ai hub
+https://aihub.or.kr/aihub-data/natural-language/about
+
+머신러닝 강좌
+
+idf
+inverse document frequency
+
+tf
+
+bert언어처리
+
+word2vec 단어를 벡터로 바꿔줌
+
+형태소분석기 konlpy 쓰는게맞는거같음
+
+자연어처리 순서
+
+1. 데이터 수집 (크롤링) > JSON 이용해서 데이터 정리 > 데이터베이스에 저장
+크롤링의 경우 selenium, bs4(beautifulsoup4) 블로그, 요기요 리뷰(가능한거같음) ...
+
+2. 데이터 라벨 추가
+긍정, 부정의 경우 0,1을 데이터에 추가해줌
+그런데? 텍스트기반의 경우 특징들 사이에 가중치를 정하는게 중요해진다고함
+맛이라는 특징에 가중치 추가
+
+3. 문장 임베딩
+딥러닝을 이용해서 문장을 벡터화해준다 > word2vec
+조사, 특수문자와 같은 필요없는 문자들을 필터링(전처리) 해준다
+Konlpy
+NLP_test.ipynb - https://colab.research.google.com/drive/10qT-7JRed5AnLxNT9pBRwCaUbBCVD2G2?hl=ko (google.com)
+
+4. 학습
+학습의 경우 새로운 데이터를 입력함 (기존의 데이터 X)
+텐서플로우...
+학습 데이터 = [“엄마 생신..”, “문자로 사진도..”, ..]
+정답 데이터 = [1, 1, ..]
+
+5. 예측
+어떤 임의의 문장에 대해 새로운 라벨을 도출함
+
+배달추천의 경우 텍스트 유사도가 적합하지 않나?? 생각이듬
+
+GPT, 엘라스틱서치 ...

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.SubjectNotOpen">
+    <resultMap id="result" type="persistence.dto.SubjectNotOpenDTO">
+        <result property="subject_id" column="subject_id"/>
+        <result property="subject_name" column="subject_name"/>
+        <result property="open" column="open"/>
+        <result property="possible_grade" column="possible_grade"/>
+    </resultMap>
+
+    <select id="selectSubjectAll" resultMap="result">
+        SELECT * FROM subject
+    </select>
+
+    <select id="selectSubjectGrade" resultMap="result" parameterType="INT">
+        SELECT * FROM subject
+        <where>
+            possible_grade = #{possible_grade}
+        </where>
+    </select>
+
+    <insert id="insertSubjectNotOpen" parameterType="persistence.dto.SubjectNotOpenDTO" statementType="CALLABLE">
+        {call insertSubjectNotOpen(#{subject_id}, #{subject_name}, #{possible_grade})}
+    </insert>
+
+    <update id="updateSubjectNotOpen" parameterType="persistence.dto.SubjectNotOpenDTO" statementType="CALLABLE">
+        {call updateSubjectNotOpen(#{subject_id}, #{subject_name}, #{possible_grade})}
+    </update>
+
+    <delete id="deleteSubjectNotOpen" parameterType="persistence.dto.SubjectNotOpenDTO" statementType="CALLABLE">
+        {call deleteSubjectNotOpen(#{subject_id})}
+    </delete>
+</mapper>
