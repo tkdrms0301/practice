@@ -1,0 +1,12 @@
+#header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 4rem;
+}

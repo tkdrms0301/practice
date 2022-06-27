@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fullpage {
+  height: 100%;
+  background-color: #2ac1bc;
+}
+
+#mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainMent {
+  width: 80vw;
+  font-family: "BMHANNAPro";
+  font-size: 6rem;
+  color: white;
+  text-shadow: 0.03em 0.03em 0.02em #999;
+}
+
+#inputSection {
+  font-family: "BMHANNAPro";
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./img/pizza.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultSection {
+  font-family: "BMHANNAPro";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.input {
+  font-family: "BMHANNAPro";
+  width: 500px;
+  background: none;
+  border: none;
+  border-bottom: 4px solid whitesmoke;
+  caret-color: whitesmoke;
+  color: whitesmoke;
+  font-size: 4rem;
+  text-align: center;
+}
+.input:focus {
+  outline: none;
+}
+
+.ment {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+.submit {
+  font-family: "BMHANNAPro";
+  background: whitesmoke;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 50%,
+    transparent 50.1%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.submit:hover {
+  background-size: 200% 100%;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 80%;
+}
+
+.mentBox {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mascot {
+}
+
+.rSecMent {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cardBox {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  margin-bottom: 3rem;
+  background-color: #2abbb6;
+  padding: 5rem;
+  border-radius: 1rem;
+}

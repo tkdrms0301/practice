@@ -1,0 +1,25 @@
+Success! Created frontend at 
+Inside that directory, you can run several commands:
+
+D:\django\delivery_service\frontend
+여기 경로 cmd에서 실행커맨드
+
+  yarn start
+    Starts the development server. 개발서버 실행 > 이거를 제일 많이쓸듯
+
+  yarn build
+    Bundles the app into static files for production. 
+
+  yarn test
+    Starts the test runner. 테스트서버 실행
+
+  yarn eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back! 삭제? 되돌리기불가능
+
+We suggest that you begin by typing:
+
+  cd frontend
+  yarn start
+
+Happy hacking!

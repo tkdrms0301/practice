@@ -1,0 +1,55 @@
+.container {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease;
+  margin-right: 2rem;
+}
+.container:hover {
+  transform: translateY(-0.3rem);
+}
+
+.image {
+  width: 250px;
+  height: 220px;
+  background-color: #999999;
+}
+
+.foodName {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 2rem;
+  color: #444444;
+}
+
+.feedbackBox {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.like .dislike {
+  transition: all 0.03s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dislike:active,
+.like:active {
+  transform: scale(1.1);
+}
+
+.cardBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
