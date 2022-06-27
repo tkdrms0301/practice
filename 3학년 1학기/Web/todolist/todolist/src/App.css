@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.TodoInsert {
+  display: flex;
+  background: #495057;
+  justify-content: space-between;
+}
+.TodoInsert input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: white;
+}
+.TodoInsert input::placeholder {
+  color: #dee2e6;
+}
+.TodoInsert button {
+  background: none;
+  outline: none;
+  border: none;
+  background: #868e96;
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s background ease-in;
+}
+.TodoInsert button:hover {
+  background: #adb5bd;
+}
+.TodoList {
+  min-height: 320px;
+  max-height: 513px;
+  overflow-y: auto; /* 내용이 잘릴 경우 스크롤바 생성 */
+}
+.TodoListItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.TodoListItem:nth-child(even) {
+  background: #f8f9fa;
+}
+.TodoListItem .checkbox {
+  cursor: pointer;
+  flex: 1; /* 차지할 수 있는 영역 모두 차지 */
+  display: flex;
+  align-items: center;
+}
+.TodoListItem svg {
+  /*아이콘*/
+  font-size: 1.5rem;
+}
+.TodoListItem .checked svg {
+  color: #22b8cf;
+}
+.TodoListItem .checked .text {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+.TodoListItem .remove {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+.TodoListItem .remove:hover {
+  color: #ff8787;
+}
+.TodoListItem:not(.TodoListItem:first-child) {
+  border-top: 1px solid #dee2e6;
+}

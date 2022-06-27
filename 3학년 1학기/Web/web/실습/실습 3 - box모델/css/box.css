@@ -1,0 +1,16 @@
+.box1 {
+    width: 200px; /* 고정 너비 */            
+    height: 100px; /* 높이 */            
+    padding: 20px;
+    background:orange; /* 배경색 */
+ }
+.box2 {
+    width: 50%;     /* 브라우저 창 너비의 50% */            
+    height: 100px; /* 높이 */
+    background:aquamarine; /* 배경색 */
+}
+.box3 {
+    width: auto;
+    height: auto; 
+    background:greenyellow; /* 배경색 */
+}

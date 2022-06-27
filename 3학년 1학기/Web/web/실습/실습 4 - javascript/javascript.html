@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script defer src="js/javascript.js"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">음식</a>
+        <a href="#">가전</a>
+        <a href="#">가구</a>
+        <a href="#">캠핑용품</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/3.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+        
+    </div>
+    <br>
+        <fieldset class="order-container">
+            <legend>상세정보</legend>
+            알프랑 그늘막 팝업 스쿼드 원터치 텐트
+            <br>
+            <button class="accordion" onclick="accordion()">판매자 정보</button>
+            <div class="panel">
+                <p>금오공과대학교</p>
+                <p>소프트웨어공학과</p>
+                <p>안상근</p>
+            </div>
+            <button class="accordion" onclick="accordion()">상품 정보</button>
+            <div class="panel">
+                <p>최신 텐트</p>
+                <p>원터치</p>
+                <p>방수</p>
+            </div>
+            <button class="accordion" onclick="accordion()">주문 정보</button>
+            <div class="panel">
+                <select id="selectBox" onchange="addList()">
+                    <option value="select" selected>선택</option>
+                    <option value="select1" id="list1" class="list">A.스피드 원턴치 팝업텐트(3~4인용)</option>
+                    <option value="select2" class="list">B.5초 원턴치 텐트(3인용) (+10,000원)</option>
+                    <option value="select3" class="list">C.5초 원턴치 텐트(5인용) (+20,000원)</option>
+                </select>
+                <ul id="addList">
+
+                </ul>
+            </div>
+            <div>
+                <span>상품금액 </span>
+                <span id = "result_value">0</span>
+                <span>원</span>
+            </div>
+            <br>
+            <div>
+                <button>구매하기</button>
+            </div>
+        </fieldset>
+    
+</body>
+</html>

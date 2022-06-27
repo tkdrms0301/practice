@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <script>window.onload = () => {
+        let bg = document.querySelector(".main_hansot .main_hansot_bg");
+        console.log(bg);
+        bg.addEventListener("mouseenter", (event) => {
+          event.target.classList.add("on");
+          console.log("mouseenter");
+        });
+        bg.addEventListener("mouseleave", (event) => {
+          event.target.classList.remove("on");
+          console.log("mouseleave");
+        });
+      };
+      </script>
+</head>
+<body>
+    <div class="box"></div>
+
+    <a href="#">
+        <div class="container">
+          <div class="item-img">
+            <img src="img/menu1.jpg" alt="나시고랭 콤보" />
+          </div>
+          <div class="item-text">
+            <h4>나시고랭 콤보</h4>
+            <h4>6,800</h4>
+          </div>
+        </div>
+      </a>  
+
+      <div class="btn_wrap">
+        <div class="gage"></div>
+        <h3>더 보기 &rarr;</h3>
+  </div>  
+
+  <div class="area_sc">
+    <figure class="sc_wrap">
+      <span class="sc_img">
+        <img src="img/main_img_01.jpg" alt="전체메뉴 이미지" />
+      </span>
+      <figcaption>
+        <p class="sc_tit fz_02">
+          <span class="s_block">가격 이상의 가치가 담긴</span>
+          <span class="s_block">다양한 메뉴를 확인해 보세요</span>
+        </p>
+        <span class="sc_txt">한솥 메뉴</span>
+      </figcaption>
+    </figure>
+  </div>
+
+
+  <div class="main_hansot">
+    <div class="main_hansot_bg"></div>
+    <div class="main_cont_wrap">
+      <div class="main_info">
+        <div class="h2_info">
+          <span class="s_block">든든한 솥밥을 위해</span>
+          <span class="s_block">한솥이 지키고,</span>
+          <span class="s_block">키워가는 것들</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

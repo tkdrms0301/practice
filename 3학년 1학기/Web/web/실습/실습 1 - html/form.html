@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script defer src="form.js"></script>
+</head>
+<body>
+    <form action="#" method="post">
+        <label>검색어<input type="text" title="검색"></label>
+        <input type="submit" value="검색">
+    </form>    
+    
+    <form action="#">
+        <fieldset>
+            <legend>개인정보</legend>
+        <div>
+            <label>이름</label><input type="text">
+        </div>
+        <div>
+            <label for="pw">메일주소</label><input type="password" id="pw">
+        </div>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <div>
+                <label for="">아이디</label><input type="text">
+            </div>
+            <div>
+                <label for="pw">비밀번호</label><input type="password">
+            </div>
+            <div>
+                <label for="">비밀번호확인</label><input type="password">
+            </div>
+        </fieldset>
+    </form>
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <div>
+                <label for="">이름</label><input type="text">
+            </div>
+            <div>
+                <label for="email">메일주소</label><input type="email">
+            </div>
+            <div>
+                <label for="">연락처</label><input type="tel">
+            </div>
+            <div>
+                <label for="">블로그/홈페이지</label><input type="url">
+            </div>
+            <div>
+                <label for="">자기소개</label>
+            </div>
+            <div>
+                <textarea id="tx_area" cols="50" rows="5"></textarea>
+            </div>
+        </fieldset>
+    </form>
+    <br></br>
+    <form action="">
+    <fieldset>
+        <select id="class">
+            <option value="archi">건축공학과</option>
+            <option value="mechanic">기계공학과</option>
+            <option value="indust">산업공학과</option>
+            <option value="elec">전기전자공학과</option>
+            <option value="computer" selected>컴퓨터소프트웨어공학과</option>
+            <option value="chemical">화학공학과</option>
+        </select>
+        <br> 
+        <label class="name_label">학번</label><input type="text" autofocus placeholder="학번을 입력하세요" required>
+        <br>
+        <legend>소프트웨어공학과 졸업여행</legend>
+        <input type="radio" name="site" id="jeju" value="jeju"><label for="jeju">제주도</label>
+        <input type="radio" name="site" id="gemuo" value="gemuo"><label for="gemuo">금오산</label>
+        <input type="radio" name="site" id="danang" value="danang"><label for="danang">다낭</label>
+        </fieldset>
+        <fieldset>
+        <legend>저녁메뉴는?</legend>
+        <input type="checkbox" name="dinner" id="dinner1" value="dinner1"><label for="dinner1">소고기</label>
+        <input type="checkbox" name="dinner" id="dinner2" value="dinner2"><label for="dinner2">보쌈</label>
+        <input type="checkbox" name="dinner" id="dinner3" value="dinner3"><label for="dinner3">김치찌게</label>
+        <input type="checkbox" name="dinner" id="dinner4" value="dinner4"><label for="dinner4">간장게장</label>
+    </fieldset>
+    <input type="submit" value="제출">
+    <input type="reset" value="리셋">
+    </form>
+    </body>
+</html>
