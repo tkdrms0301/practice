@@ -1,0 +1,7 @@
+email 전송 구현
+https://hanke-r.tistory.com/158
+
+https://www.baeldung.com/spring-email
+
+email 보안 문제 해결
+https://born2bedeveloper.tistory.com/14
