@@ -5,8 +5,8 @@
 	`password`	varchar(20)	NOT NULL,
 	`SNS`	INT	NULL,
 	`Email`	varchar(50)	NULL,
-	`Alarm`	boolean	NOT NULL	DEFAULT 0,
-	`Image`	varchar(100)	NULL,
+	`Alarm`	BOOLEAN	NOT NULL	DEFAULT 0,
+	`Image`	text	NULL,
 	`Nickname`	varchar(20)	NULL,
 	`Introduction`	varchar(100)	NULL,
 	`Link`	varchar(100)	NULL
@@ -48,7 +48,7 @@ CREATE TABLE `Category` (
 CREATE TABLE `Attachments` (
 	`Attachment_id`	INT	NOT NULL,
 	`Name`	varchar(20)	NOT NULL,
-	`url`	varchar(100)	NOT NULL,
+	`url`	text	NOT NULL,
 	`Extension`	varchar(20)	NOT NULL,
 	`Post_id`	INT	NOT NULL
 );
@@ -87,14 +87,17 @@ CREATE TABLE `Comments` (
 );
 
 CREATE TABLE `Images` (
+	`image_id`	INT	NOT NULL,
 	`layout_id`	INT	NOT NULL,
-	`url`	varchar(100)	NOT NULL
+	`url`	text	NOT NULL
 );
 
 CREATE TABLE `Codes` (
+	`code_id`	INT	NOT NULL,
 	`layout_id`	INT	NOT NULL,
 	`Code`	text	NULL,
-	`Type`	INT	NULL
+	`Type`	INT	NULL,
+	`code_explanation`	text	NULL
 );
 
 CREATE TABLE `Contexts` (
@@ -104,8 +107,7 @@ CREATE TABLE `Contexts` (
 
 CREATE TABLE `Hyperlinks` (
 	`layout_id`	INT	NOT NULL,
-	`Context`	text	NULL,
-	`Link`	varchar(255)	NULL
+	`Link`	text	NULL
 );
 
 CREATE TABLE `Mathematics` (
@@ -115,12 +117,12 @@ CREATE TABLE `Mathematics` (
 
 CREATE TABLE `Videos` (
 	`layout_id`	INT	NOT NULL,
-	`url`	varchar(100)	NULL
+	`url`	text	NULL
 );
 
 CREATE TABLE `Documents` (
 	`layout_id`	INT	NOT NULL,
-	`url`	varchar(100)	NULL
+	`url`	text	NULL
 );
 
 ALTER TABLE `Users` ADD CONSTRAINT `PK_USERS` PRIMARY KEY (
@@ -168,10 +170,12 @@ ALTER TABLE `Comments` ADD CONSTRAINT `PK_COMMENTS` PRIMARY KEY (
 );
 
 ALTER TABLE `Images` ADD CONSTRAINT `PK_IMAGES` PRIMARY KEY (
+	`image_id`,
 	`layout_id`
 );
 
 ALTER TABLE `Codes` ADD CONSTRAINT `PK_CODES` PRIMARY KEY (
+	`code_id`,
 	`layout_id`
 );
 
