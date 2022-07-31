@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
+
+html,
+body,
+div,
+span {
+    font-family: 'Noto Sans KR';
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.root {
+    position: relative;
+    width: 100%;
+    min-width: 1040px;
+}
+
+.draggable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header {
+    position: relative;
+    z-index: 101;
+}
+.header .contents {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.header_content {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header_content .contents {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 30px 6px 25px 5px;
+    background-color: #fff;
+}
+.header_content .contents h1 {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 53px;
+}
+.header_content .contents h1 a {
+    display: block;
+    float: left;
+    height: 100%;
+}
+.header_content .contents h1 a img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+.header_content .contents h1 span {
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: 0.313em;
+    line-height: 1.5em;
+}
+.header_content .contents .memberInfo_wrap {
+    display: flex;
+    align-items: center;
+}
+.header_content .contents .memberInfo_wrap li {
+    margin-left: 44px;
+    margin-top: 2px;
+}
+.header_content .contents .memberInfo_wrap li:first-child {
+    margin-left: 0;
+}
+.header_content .contents .memberInfo_wrap li a {
+    display: block;
+    position: relative;
+    padding-bottom: 19px;
+}
+.header_content .contents .memberInfo_wrap li a img {
+    width: 36px;
+    height: 36px;
+}
+.header_content .contents .memberInfo_wrap li a span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+}
+.header_content .contents .memberInfo_wrap li.ad_partner {
+    width: 136px;
+    height: 39px;
+    margin-top: 5px;
+}
+.header_content .contents .memberInfo_wrap li.ad_partner + li {
+    margin-left: 34px;
+}
+.header_content .contents .memberInfo_wrap li.ad_partner a {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+}
+.header_content .contents .memberInfo_wrap li.ad_partner a img {
+    width: 100%;
+    height: 100%;
+}
+.header_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+.nav {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #a58e8e;
+    border-bottom: 2px solid #fb4357;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h3 {
+    margin: 10px;
+    margin-left: 0px;
+}
+.nav_menu {
+    margin: 0px;
+}
+.nav_menu {
+    display: inline-flex;
+}
+
+.nav .contents {
+    margin: 0 auto;
+    width: 980px;
+}
+ul {
+    padding: 0px;
+}
+
+.nav_menu > li {
+    float: right;
+    width: 100px;
+}
+
+.closebtn,
+.More {
+    display: none;
+}
+
+.sidenav {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .header_content .contents {
+        justify-content: space-between;
+        padding: 0px 0px 0px 0px;
+        margin-bottom: 0px;
+    }
+    .closebtn,
+    .More {
+        display: block;
+    }
+    .ad-partner {
+        display: none;
+    }
+
+    .sidenav {
+        display: flex;
+        height: 20%;
+        width: 200px;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(221, 221, 221, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+    }
+
+    .sidenav a span {
+        padding: 20px 20px 10px 00px;
+        overflow-x: visible;
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        overflow-x: hidden;
+        transition: 1s;
+    }
+
+    .sidenav a:hover {
+        color: white;
+    }
+
+    .sidenav span:hover {
+        color: white;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        color: black;
+        margin-left: 50px;
+    }
+
+    .More {
+        font-size: 50px;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .header_content .contents h1 {
+        height: 50px;
+    }
+
+    .nav {
+        top: 100px;
+    }
+}

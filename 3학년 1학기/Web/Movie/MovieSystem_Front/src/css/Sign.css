@@ -1,0 +1,39 @@
+.box-sign {
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    height: fit-content;
+    padding-bottom: 20px;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+p {
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+}
+input {
+    width: 300px;
+    height: 35px;
+    font-style: bold;
+}
+
+.sign-form {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+#submit {
+    background-color: #fb4357;
+    color: white;
+    font-weight: bold;
+    width: 311px;
+    height: 45px;
+    border: 5px double white;
+}
+@media screen and (max-width: 1000px) {
+    .box-sign {
+        margin-top: 187px;
+    }
+}

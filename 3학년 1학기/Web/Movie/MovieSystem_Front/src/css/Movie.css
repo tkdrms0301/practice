@@ -1,0 +1,145 @@
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: auto;
+    font-size: 17px;
+    padding-top: 10px;
+    width: 1000px;
+}
+
+.movieChart {
+    margin: auto;
+    font-size: 17px;
+    padding-top: 10px;
+    border-bottom: 5px solid black;
+    width: 1000px;
+}
+
+.movie_sort {
+    display: flex;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+}
+#movie_sortMovie {
+    width: 130px;
+    height: 35px;
+}
+#movie_sortSubmit {
+    width: 100px;
+    height: 35px;
+}
+.movie_sect-movie-chart {
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    width: 1000px;
+}
+
+.movie_sect-movie-chart ol {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.movie_sect-movie-chart li {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie_box-image img {
+    width: 240px;
+    height: 320px;
+}
+
+.movie_box-contents {
+    color: #555151;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.movie_box-contents strong {
+    width: 100%;
+}
+
+.movie_box-image .movie_rank {
+    display: block;
+    height: 28px;
+    margin-bottom: 4px;
+    background: black;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.movie_link-reservation {
+    background-color: #ea4362;
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.movie_movieName_movie {
+    font-size: 18px;
+    color: rgb(65, 63, 63);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.movie_score {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.movie-tekectRate {
+    border-right: 1px solid rgb(129, 126, 126);
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.movie-egg span {
+    padding-left: 10px;
+    font-weight: lighter;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.movie_movie-egg img {
+    height: 25px;
+}
+
+.movie_movieRelease {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.ico-grade {
+    position: relative;
+}
+.ico-grade img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 210px;
+    bottom: 290px;
+}
+
+@media screen and (max-width: 1000px) {
+}

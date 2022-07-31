@@ -1,0 +1,213 @@
+.ticket-layout {
+    width: 810px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f0e5;
+}
+
+.ticket-time,
+.ticket-movie {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 400px;
+    height: 600px;
+}
+
+.ticket-title {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    font-size: 20px;
+    height: 35px;
+    align-items: center;
+}
+
+.ticket-movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ticket-movieList li {
+    color: black;
+    margin-top: 2px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ticket-movieInfo {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-grade {
+    margin-right: 3px;
+}
+
+.ticket-grade img {
+    width: 25px;
+}
+
+.ticket-movieName span {
+    font-weight: bold;
+}
+
+.ticket-timeTable {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ticket-schdule {
+    border-top: 3px solid rgb(160, 156, 156);
+    width: 80%;
+    height: 100px;
+}
+
+.ticket-cinemaInfo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ticket-cinemaInfo :nth-child(1) {
+    font-weight: bold;
+    color: rgb(207, 44, 44);
+    font-weight: black;
+}
+
+.ticket-cinemaInfo :nth-child(2) {
+    font-weight: bold;
+    color: black;
+    font-weight: black;
+}
+
+.ticket-cinemaInfo :nth-child(3) {
+    font-size: 14px;
+    color: gray;
+    font-weight: black;
+}
+
+.ticket-timeInfo-box {
+    display: flex;
+    width: 100%;
+}
+
+.ticket-timeInfo {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-movieTime,
+.ticket-seat {
+    width: 55px;
+    height: 25px;
+    text-align: center;
+}
+.ticket-movieTime {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(160, 156, 156);
+    padding: 2px;
+}
+
+.ticket-seat {
+    text-align: left;
+    color: green;
+    font-size: 14px;
+}
+
+.ticket_tnb {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(43, 41, 41);
+    opacity: 0.7;
+}
+
+.ticket_tnb-box {
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+}
+
+.ticket_tnb-img img {
+    width: 110px;
+}
+
+.ticket_tnb-movieName {
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 130px;
+    border-right: 2px solid rgb(141, 136, 136);
+}
+
+.ticket_tnb-movieName :nth-of-type(1) {
+    padding-bottom: 30px;
+}
+
+.ticket_tnb-movieName span {
+    display: flex;
+    color: rgb(231, 228, 228);
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket_tnb-movieInfo {
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 160px;
+    border-right: 2px solid rgb(141, 136, 136);
+}
+
+.ticket_tnb-movieInfo span {
+    color: rgb(231, 228, 228);
+    font-size: 15px;
+}
+.ticket_tnb-movieInfo_detaile {
+    margin-left: 10px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.ticket_tnb-seating {
+    width: 140px;
+    padding-right: 0px;
+    margin-left: 230px;
+}
+
+.ticket_tnb-seating input {
+    cursor: auto;
+    background-color: rgb(105, 57, 57);
+    border-radius: 20px;
+    width: 140px;
+    height: 130px;
+    color: rgb(136, 130, 130);
+    font-size: 20px;
+    font-weight: bold;
+}

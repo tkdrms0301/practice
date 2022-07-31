@@ -1,0 +1,157 @@
+ul.point_col2 {
+    overflow: hidden;
+}
+.comment_wrap-persongrade {
+    margin-top: 30px;
+}
+.comment_wrap-persongrade > ul {
+    border-top: 1px solid #999999;
+    color: #333333;
+}
+ul.point_col2 > li {
+    float: left;
+    margin-right: -1px;
+    border-right: none;
+    width: 50%;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+.comment-li-box {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    height: 180px;
+}
+
+ul.point_col2 > li:nth-child(2n + 1) {
+    border-right: 1px solid #ddd;
+}
+
+.comment_wrap-persongrade .comment_box-image {
+    float: left;
+    padding: 0 20px;
+}
+.comment_thumb-image {
+    display: block;
+    position: relative;
+}
+span {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+ul {
+    list-style: none;
+}
+.comment_wrap-persongrade .comment_box-image .comment_thumb-image img {
+    width: 62px;
+    height: 62px;
+}
+.comment_wrap-persongrade .comment_box-image .comment_thumb-image .comment_profile-mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 62px;
+    height: 62px;
+    background: url(https://img.cgv.co.kr/R2014/images/common/bg/bg_photocircle.png) 0 0 no-repeat;
+}
+.point_col2 .writerinfo {
+    height: 24px;
+}
+.comment_writerinfo li:first-child {
+    background: none;
+    padding-left: 0;
+}
+.comment_writerinfo .comment_writer-name {
+    font-size: 12px;
+}
+.comment_egg-icon {
+    display: inline-block;
+    margin-right: 6px;
+    width: 22px;
+    height: 22px;
+    background: url(https://img.cgv.co.kr/R2014/images/sprite/sprite_egg.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+.comment_writer-etc {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin-left: 20px;
+}
+.comment_box-comment {
+    margin-bottom: 10px;
+}
+
+.comment_writer-etc .comment_day {
+    padding-right: 8px;
+    margin-right: 6px;
+    background: url(https://img.cgv.co.kr/R2014/images/common/bg/bg_writeinfo.gif) no-repeat 100% 0;
+}
+.comment_btn_point_like {
+    display: flex;
+    padding-right: 8px;
+    margin-right: 6px;
+    background: url(https://img.cgv.co.kr/R2014/images/common/bg/bg_writeinfo.gif) no-repeat 100% 0;
+}
+.comment_like {
+    margin: 0 10px;
+}
+.comment_recommand_count {
+    margin: 0 5px;
+}
+.comment_modify_button {
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    display: none;
+}
+.detaileView-Modify-comment {
+    display: none;
+}
+
+.comment_btn_point_like {
+    cursor: pointer;
+}
+
+.detaileView-Modify-comment-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.detaileView-Modify-comment-select,
+.detaileView-Modify-comment-select select {
+    width: 80px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1px;
+}
+.detaileView-Modify-comment-input input,
+.detaileView-Modify-comment-input {
+    width: 250px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.detaileView-Modify-comment-submit-input {
+    width: 80px;
+    height: 30px;
+    margin: 0px;
+    margin-top: 3px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
