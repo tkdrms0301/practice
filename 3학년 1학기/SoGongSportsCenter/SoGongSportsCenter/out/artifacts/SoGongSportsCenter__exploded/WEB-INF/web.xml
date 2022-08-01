@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>userManageViewEnroll</servlet-name>
+        <servlet-class>Boundary.UserManageEnrollView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>userManageViewRead</servlet-name>
+        <servlet-class>Boundary.UserManageReadView</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userManageViewEnroll</servlet-name>
+        <url-pattern>/userManage/enroll</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userManageViewRead</servlet-name>
+        <url-pattern>/userManage/read</url-pattern>
+    </servlet-mapping>
+</web-app>

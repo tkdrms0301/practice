@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SoGongSportsCenter:웹 exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SoGongSportsCenter__exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SoGongSportsCenter/web/웹" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="SoGongSportsCenter/web/웹" />
+          <element id="module-output" name="SoGongSportsCenter" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
