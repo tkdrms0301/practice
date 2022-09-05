@@ -1,0 +1,13 @@
+prolog
+프론트 입장에서 -> 이미지 url를 백엔드에 넘겨주면 백엔드는 사진을 저장하고 해당 주소를 url로 저장하고 
+파일 서버 사용 물어보기 url 관련해서 저장하는 방식 정하기
+
+jwt에서 userId 추출해서 사용하면 받아서 사용할 필요가 없음
+
+프론트에서 
+
+https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=ac1a0ec2e424c32d5baa95bf6114d8b0&redirect_uri=https://e3c5-210-218-158-162.jp.ngrok.io/login/kakao
+1. 리다이렉트 주소를 프론트내 주소로 이동하도록 작성
+2. 인가코드 및 추가 정보 입력 후 백엔드로 정보 전송
+3. 백엔드는 인가코드 받아서 accessToken생성
+4. 백엔드에서 accessToken으로 유저정보( id 등) 반환
