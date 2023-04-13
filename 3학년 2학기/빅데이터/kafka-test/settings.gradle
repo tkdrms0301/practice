@@ -1,0 +1,6 @@
+rootProject.name = 'kafka-test'
+include 'admin'
+include 'producers'
+include 'consumers'
+include 'kafkastreams'
+
