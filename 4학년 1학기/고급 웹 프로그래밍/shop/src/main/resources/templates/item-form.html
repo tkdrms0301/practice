@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body>
+<h1>상품등록</h1>
+<form id="register-form" th:action="@{/items/new}" th:object="${bookForm}" method="post">
+    <div th:if="${errors?.containsKey('globalError')}">
+        <p class="field-error" th:text="${errors['globalError']}">전체 오류 메시지</p>
+    </div>
+    <div class="form-row">
+        <label>상품명: </label><input type="text" th:field="*{name}" autofocus="autofocus" placeholder="상품명"
+                                   th:class="${errors?.containsKey('name')} ? 'field-error' : ''"/>
+        <div class="field-error" th:if="${errors?.containsKey('name')}" th:text="${errors['name']}">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label>가격: </label><input type="text" th:field="*{price}" placeholder="가격"
+                                  th:class="${errors?.containsKey('price')} ? 'field-error' : ''"/><br />
+        <div class="field-error" th:if="${errors?.containsKey('price')}" th:text="${errors['price']}"></div>
+    </div>
+    <div class="form-row">
+        <label>수량: </label><input type="text" th:field="*{stockQuantity}" placeholder="수량"
+                                  th:class="${errors?.containsKey('stockQuantity')} ? 'field-error' : ''"/><br />
+        <div class="field-error" th:if="${errors?.containsKey('stockQuantity')}" th:text="${errors['stockQuantity']}"></div>
+    </div>
+    <div class="form-row">
+        <label>저자: </label><input type="text" th:field="*{author}" placeholder="저자"/><br />
+    </div>
+    <div class="form-row">
+        <label>ISBN: </label><input type="text" th:field="*{isbn}" placeholder="ISBN"/><br />
+    </div>
+    <div class="form-row">
+        <input type="submit" value="상품등록" />
+        <input type="reset" value="다시입력" />
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>[ERROR]500 오류 화면</h2>
+<h2>일시적인 서버에러입니다.</h2>
+<ul>
+    <li th:text="|timestamp: ${timestamp}|"></li>
+    <li th:text="|path: ${path}|"></li>
+    <li th:text="|status: ${status}|"></li>
+    <li th:text="|message: ${message}|"></li>
+    <li th:text="|error: ${error}|"></li>
+    <li th:text="|exception: ${exception}|"></li>
+</ul>
+</body>
+</html>
