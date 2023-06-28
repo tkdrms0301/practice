@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "phoneNumber",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "AzureWebJobsTwilioAccountSid": "ACdb96f230594cd29bde5faf4fed254c42",
+      "AzureWebJobsTwilioAuthToken": "bb1140a05145c4e42830dcdfb05d7d09",
+      "from": "+12545276351",
+      "direction": "out"
+    }  
+  ]
+}

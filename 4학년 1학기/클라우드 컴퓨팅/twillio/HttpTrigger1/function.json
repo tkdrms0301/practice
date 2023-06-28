@@ -1,0 +1,29 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+    ,
+    {
+      "type": "twilioSms",
+      "direction": "out",
+      "name": "twilioMessage",
+      "AzureWebJobsTwilioAccountSid": "ACdb96f230594cd29bde5faf4fed254c42",
+      "AzureWebJobsTwilioAuthToken": "bb1140a05145c4e42830dcdfb05d7d09",
+      "from": "+12545276351"
+    }
+  ]
+}
